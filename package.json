@@ -2,11 +2,11 @@
   "name": "survey-form-assignment",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha src/test/*.test.js",
-    "start": "nodemon src/app.js",
-    "debug": "nodemon --inspect=0.0.0.0 src/app.js"
+    "test": "mocha src/test",
+    "start": "NODE_ENV=test nodemon src/app.js",
+    "debug": "NODE_ENV=test nodemon --inspect=0.0.0.0 src/app.js"
   },
   "author": "Oliver",
   "license": "ISC",
